@@ -1,0 +1,16 @@
+paths:
+  raw_data: data/raw/online_retail.xlsx
+  processed_data: data/processed/cleaned_retail.csv
+  rfm_features: data/features/rfm_table.csv
+
+model:
+  k_min: 2
+  k_max: 10
+  random_state: 42
+
+scaler:
+  type: standard
+
+outlier:
+  lower_quantile: 0.01
+  upper_quantile: 0.99
